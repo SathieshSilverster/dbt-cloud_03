@@ -1,0 +1,21 @@
+sources:
+  - name: one 
+    database: snowflakedbt
+    schema: snowraw
+    tables:
+      - name: raw_listing
+      - name: raw_review
+      - name: raw_host
+  - name: two 
+    database: dbt_dev
+    schema: raw_dbt_dev
+    tables:
+      - name: emp 
+      - name: dept
+
+  - name: three 
+    database: zzz 
+    schema: yyy 
+    tables:
+      - name:  CUSTOMER_STATUS
+    

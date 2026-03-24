@@ -1,0 +1,21 @@
+snapshots:
+
+
+  - name: two_s
+    relation: source('two', 'dept')
+    config:
+        unique_key: DEPTNO
+        strategy: check
+        hard_deletes: invalidate
+        check_cols: 
+          - DNAME
+          - LOC
+
+  - name: two_scd
+    relation: source('three','CUSTOMER')
+    config: 
+        unique_key: CUSTOMER_ID
+        strategy: timestamp
+        updated_at: LAST_UPDATED
+        hard_deletes: invalidate      
+        

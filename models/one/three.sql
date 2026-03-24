@@ -1,0 +1,1 @@
+select * from ZZZ.YYY.CUSTOMER_STATUS
