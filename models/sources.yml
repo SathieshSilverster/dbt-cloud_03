@@ -1,0 +1,7 @@
+sources:
+  - name: silver 
+    database: YOUTUBE
+    schema: PKBS
+    tables:
+      - name: RAW_BOOKINGS
+      - name: RAW_LISTINGS

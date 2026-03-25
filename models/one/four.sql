@@ -1,2 +1,1 @@
-
-select * from {{source('to','orders')}}
+select * from {{ ref('two') }}

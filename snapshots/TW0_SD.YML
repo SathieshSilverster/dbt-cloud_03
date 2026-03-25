@@ -11,11 +11,3 @@ snapshots:
           - DNAME
           - LOC
 
-  - name: two_scd
-    relation: source('three','CUSTOMER')
-    config: 
-        unique_key: CUSTOMER_ID
-        strategy: timestamp
-        updated_at: LAST_UPDATED
-        hard_deletes: invalidate      
-        
